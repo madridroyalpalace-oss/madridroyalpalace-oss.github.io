@@ -87,9 +87,6 @@ color: #c6a95d;
 }
 
 /* Para que el contenido no quede debajo del menú */
-body {
-padding-top: 80px;
-}
 /* Hace que el footer siempre quede abajo */
 html, body {
 height: 100%;
