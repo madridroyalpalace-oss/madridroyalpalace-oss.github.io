@@ -40,3 +40,24 @@ h1, h2 {
 video {
   pointer-events: none;
 }
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+background: white;
+padding: 15px 0;
+text-align: center;
+z-index: 1000;
+}
+
+nav a {
+margin: 0 20px;
+text-decoration: none;
+color: black;
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+color: #c9a227;
+}
