@@ -90,3 +90,17 @@ color: #c6a95d;
 body {
 padding-top: 80px;
 }
+/* Hace que el footer siempre quede abajo */
+html, body {
+height: 100%;
+margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+footer {
+margin-top: auto;
+}
