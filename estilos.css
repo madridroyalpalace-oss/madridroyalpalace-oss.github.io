@@ -101,3 +101,26 @@ flex-direction: column;
 footer {
 margin-top: auto;
 }
+/* CONTACTO CENTRADO Y ELEGANTE */
+.contact-section {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 60px 20px;
+}
+
+.contact-section h2 {
+font-size: 38px;
+margin-bottom: 20px;
+}
+
+.contact-section p {
+font-size: 18px;
+margin: 8px 0;
+}
+
+.contact-section .btn {
+margin-top: 20px;
+}
