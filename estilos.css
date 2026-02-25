@@ -113,3 +113,7 @@ nav a {
 flex: 0 0 auto;
 }
 }
+.btn.secondary {
+background: #E1306C;
+color: #fff;
+}
