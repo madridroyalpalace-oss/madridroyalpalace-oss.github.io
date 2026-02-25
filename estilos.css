@@ -1,11 +1,9 @@
-body{
-  margin:0;
-  font-family:'Montserrat', sans-serif;
-  color:#222;
-  background:#fff;
-  body {
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+color: #222;
+background: #fff;
 padding-top: 70px;
-}
 }
 .hero{position:relative;height:100vh;overflow:hidden}
 .video-bg{width:100%;height:100%;object-fit:cover}
@@ -102,4 +100,16 @@ margin: 8px 0;
 
 .contact-section .btn {
 margin-top: 20px;
+}
+@media (max-width: 768px) {
+nav {
+justify-content: flex-start;
+overflow-x: auto;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+}
+
+nav a {
+flex: 0 0 auto;
+}
 }
