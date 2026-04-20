@@ -1,8 +1,9 @@
-const items = document.querySelectorAll(".fade");
+const elements = document.querySelectorAll(".fade");
 
 window.addEventListener("scroll", () => {
-  items.forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
       el.classList.add("visible");
     }
   });
