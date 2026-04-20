@@ -1,10 +1,15 @@
 const elements = document.querySelectorAll(".fade");
 
-window.addEventListener("scroll", () => {
-  elements.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add("visible");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
     }
   });
+}, {
+  threshold: 0.15
+});
+
+elements.forEach(el => {
+  observer.observe(el);
 });
