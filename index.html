@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Royal Palace Madrid</title>
+<title>Royal Palace Madrid</title>
 
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO CON VIDEO -->
+<!-- MENU -->
+<nav class="nav">
+  <div class="logo">Royal Palace</div>
+  <div class="links">
+    <a href="#about">Sobre</a>
+    <a href="#services">Servicios</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
 <header class="hero">
 
-  <video autoplay muted loop playsinline class="video-bg">
+  <video autoplay muted loop playsinline class="video">
     <source src="video.mp4" type="video/mp4">
   </video>
 
-  <!-- Capa oscura -->
-  <div class="overlay-dark"></div>
+  <div class="overlay"></div>
 
-  <!-- Texto principal -->
-  <div class="hero-content">
+  <div class="hero-content fade">
     <h1>Royal Palace Madrid</h1>
     <p>Espacio exclusivo para eventos de lujo</p>
   </div>
 
 </header>
 
-<!-- SOBRE NOSOTROS -->
-<section class="section fade">
+<!-- ABOUT -->
+<section id="about" class="section fade">
   <h2>Sobre nosotros</h2>
-  <p>
-    Royal Palace Madrid es un espacio exclusivo para eventos premium,
-    bodas y celebraciones privadas en un entorno elegante y sofisticado.
-  </p>
+  <p>Un espacio elegante para eventos exclusivos en Madrid.</p>
 </section>
 
-<!-- SERVICIOS -->
-<section class="section fade">
+<!-- SERVICES -->
+<section id="services" class="section fade">
   <h2>Servicios</h2>
 
   <div class="grid">
     <div class="card">Bodas</div>
     <div class="card">Eventos privados</div>
-    <div class="card">Eventos corporativos</div>
+    <div class="card">Corporativo</div>
   </div>
 </section>
 
-<!-- PROYECTOS -->
-<section class="section fade">
-  <h2>Proyectos</h2>
-  <p>Experiencias seleccionadas y momentos únicos diseñados a medida.</p>
+<!-- GALLERY -->
+<section id="gallery" class="section fade">
+  <h2>Galería</h2>
+
+  <div class="gallery">
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+    <img src="foto4.jpg">
+  </div>
 </section>
 
-<!-- CTA -->
-<section class="section cta fade">
-  <h2>Creamos experiencias únicas</h2>
-  <p>Contáctanos para diseñar tu evento ideal</p>
+<!-- CONTACT -->
+<section id="contact" class="section fade">
+  <h2>Contacto</h2>
+  <p>Reserva tu evento con nosotros</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Royal Palace Madrid</p>
+© 2026 Royal Palace Madrid
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
