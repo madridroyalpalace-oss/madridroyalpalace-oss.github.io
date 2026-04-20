@@ -1,6 +1,6 @@
+// scroll animations
 const elements = document.querySelectorAll(".fade");
 
-// animación scroll pro
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -11,13 +11,14 @@ const observer = new IntersectionObserver(entries => {
 
 elements.forEach(el => observer.observe(el));
 
-// menú dinámico (aparece/desaparece)
+
+// NAV BLUR ON SCROLL
 const nav = document.querySelector(".nav");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    nav.style.background = "rgba(0,0,0,0.4)";
+  if (window.scrollY > 80) {
+    nav.classList.add("scrolled");
   } else {
-    nav.style.background = "transparent";
+    nav.classList.remove("scrolled");
   }
 });
